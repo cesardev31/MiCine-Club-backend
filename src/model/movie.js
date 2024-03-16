@@ -1,7 +1,7 @@
-import { DataTypes } from 'sequelize';
-import sequelize from '../config/database.js';
+import { DataTypes } from "sequelize";
+import sequelize from "../config/database.js";
 
-const Movie = sequelize.define('Movie', {
+const Movie = sequelize.define("Movie", {
   title: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -14,7 +14,6 @@ const Movie = sequelize.define('Movie', {
     type: DataTypes.DATEONLY,
     allowNull: false,
   },
-  // ...otros campos como director, duración, etc.
 });
 
 export default Movie;
